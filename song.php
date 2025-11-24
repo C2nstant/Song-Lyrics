@@ -125,6 +125,13 @@
                 border-radius: 15px;
             }
 
+            .cover {
+                margin: 0 auto;
+                width: 300px;
+                margin-bottom: 30px;
+                border: 3px solid rgba(255, 255, 255, 0.2);
+            }
+
             .last {
                 margin-bottom: 80px;
             }
@@ -139,6 +146,10 @@
             <p><span>Mood:</span> <?= $mood ?></p>
             <p><span>Total Sections:</span> <?= $totalSections ?></p>
             <p><span>Song Duration:</span> <?= $duration ?></p>
+        </div>
+
+        <div class="cover">
+            <img src="images/AlbumCover.jpg" alt="No One Left To Love Cover Art">
         </div>
 
         <section class="section">
