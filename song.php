@@ -1,5 +1,4 @@
 <?php
-
     $title = "No One Left To Love";
     $artist = "ROOS + BERG";
     $mood = "Hopeful";
@@ -49,7 +48,6 @@
         "say", 
         "love"
     ];
-
     
     $sections = [
         $verse1 = [
@@ -93,6 +91,8 @@
 <html>
     <head>
         <title>Song Lyrics</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
                 background: rgba(28, 22, 22);
@@ -109,6 +109,10 @@
                 border-radius: 15px;
             }
 
+            h1 {
+                font-weight: normal;
+            }
+
             span {
                 font-weight: bold;
             }
@@ -120,10 +124,20 @@
                 text-align: center;
                 font-size: 1.2em;
                 margin-bottom: 30px;
-                background: rgba(152, 28, 57);
+                /*background: rgba(152, 28, 57); */
                 color: white;
                 border-radius: 15px;
             }
+
+            sectionbg1 {
+                background: rgba(152, 28, 57);
+            }
+
+            sectionbg2 {
+                background: rgba(152, 28, 57);
+            }
+
+
 
             .cover {
                 margin: 0 auto;
@@ -139,9 +153,10 @@
     </head>
 
     <body>
+        <?php include 'header.php'; ?>
+
         <div class="information">
-            <h1>Song Lyrics Activity</h1>
-            <p><span>Title:</span> <?= $title ?></p>
+            <h1><span>Song Title:</span> <?= $title ?></h1>
             <p><span>Artist:</span> <?= $artist ?></p>
             <p><span>Mood:</span> <?= $mood ?></p>
             <p><span>Total Sections:</span> <?= $totalSections ?></p>
@@ -151,6 +166,7 @@
         <div class="cover">
             <img src="images/AlbumCover.jpg" alt="No One Left To Love Cover Art">
         </div>
+
 
         <section class="section">
             <h2>Verse 1</h2>
@@ -188,6 +204,7 @@
             </div>
         </section>
         
+        <?php include 'footer.php'; ?>
     </body>
 
 </html>
